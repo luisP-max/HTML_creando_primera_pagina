@@ -15,12 +15,6 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.6;
-  color: #333;
-}
-
 /* HEADER */
 header {
   background: var(--verde);
@@ -83,7 +77,7 @@ nav a:hover {
   margin-bottom: 1rem;
 }
 
-/* SECCIONES GENERALES */
+/* SECCIONES */
 .section {
   padding: 5rem 5%;
   max-width: 1200px;
@@ -92,6 +86,7 @@ nav a:hover {
   grid-template-columns: 1fr 1fr;
   gap: 3rem;
   align-items: start;
+  scroll-margin-top: 100px;     /* Importante para el scroll */
 }
 
 .content h2 {
@@ -125,6 +120,7 @@ nav a:hover {
   color: white;
   padding: 5rem 5%;
   text-align: center;
+  scroll-margin-top: 100px;
 }
 
 .riwi-content {
@@ -140,7 +136,6 @@ nav a:hover {
 .riwi-content p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
-  opacity: 0.95;
 }
 
 .btn-riwi {
@@ -153,13 +148,11 @@ nav a:hover {
   border-radius: 50px;
   text-decoration: none;
   transition: all 0.3s;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
 }
 
 .btn-riwi:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 20px rgba(0,0,0,0.3);
-  background: #f0f0f0;
 }
 
 /* NORMAS */
@@ -167,6 +160,7 @@ nav a:hover {
   background: #f8f9f8;
   padding: 5rem 5%;
   text-align: center;
+  scroll-margin-top: 100px;
 }
 
 .normas-section h2 {
